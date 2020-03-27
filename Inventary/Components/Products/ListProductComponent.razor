@@ -1,0 +1,57 @@
+﻿@using Entities
+@using Business
+
+<hr />
+<select class="form-control" @onchange="CategoryChange">
+    <option value="">Seleccione categoría</option>
+    @foreach (var category in categories)
+    {
+        <option value="@category.CategoryId">@category.CategoryName</option>
+    }
+</select>
+<hr />
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Referencia</th>
+            <th scope="col">Nombre Producto</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Cantidad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in tempProducts)
+        {
+            <tr>
+                <td scope="row">@producto.ProductId</td>
+                <td>@producto.ProductName</td>
+                <td>@producto.CategoryId</td>
+                <td>@producto.TotalQuantity</td>
+                <td><button class="btn btn-info"><a href="product/update/@producto.ProductId"><span class="oi oi-pencil"></span></a></button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    List<ProductEntity> products = new List<ProductEntity>();
+    List<ProductEntity> tempProducts = new List<ProductEntity>();
+    List<CategoryEntity> categories = new List<CategoryEntity>();
+
+    protected override async void OnInitialized()
+    {
+        products = B_Product.ProductList();
+        tempProducts = products;
+        categories = B_Category.CategoryList();
+    }
+
+    private void CategoryChange(ChangeEventArgs e) {
+        string category = e.Value.ToString();
+        if (category.Length < 4)
+            tempProducts = products.Where(c => c.CategoryId == category).ToList();
+        else
+            tempProducts = products;
+    }
+}

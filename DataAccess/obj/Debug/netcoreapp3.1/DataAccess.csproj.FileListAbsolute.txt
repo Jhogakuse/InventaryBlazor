@@ -1,0 +1,15 @@
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.json
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.dev.json
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\DesarrolloAllInOne\source\repos\Inventary\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache

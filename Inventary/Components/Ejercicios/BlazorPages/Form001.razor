@@ -1,0 +1,41 @@
+﻿<!--
+
+<input type="text" @bind-value="@message" />
+<input type="text" @bind-value="@message" />
+<input type="button" name="name" value="Haga clic aquí" onclick="ChangeText"/>
+
+-->
+
+<form>
+    <div class="form-group">
+        <h3>@titleForm</h3>
+        <label for="userName">Nombre de usuario</label>
+        <input name="userName" type="text" class="form-control" @bind-value="@userName" />
+        <label for="colorUser">¿Tu color favorito?</label>
+        <input name="colorUser" type="text" class="form-control" @bind-value="@colorUser" />
+        <small class="form-text text-muted">@userMessage</small>
+    </div>
+    <input type="button" class="btn btn-success" value="Cambio" @onclick="ChangeText" />
+</form>
+
+<div>
+    @userName
+    @colorUser
+    @userMessage
+</div>
+@code{
+    [Parameter]
+    public string Message { get; set; }
+
+    string titleForm = "El mensaje es: ";
+    string userName, colorUser, userMessage;
+
+    protected override async Task OnInitializedAsync() {
+        titleForm = Message;
+    }
+
+    private void ChangeText()
+    {
+        userMessage = "Usuario " + userName + " color favorito es " + colorUser;
+    }
+}
